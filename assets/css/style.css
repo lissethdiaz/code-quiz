@@ -1,0 +1,44 @@
+*{
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  background:#ecd344;
+}
+
+.quiz-info, .quiz {
+  width: 450px;
+  background: white;
+  position: center;
+  margin: 100px auto;
+  text-align: center;
+  border-radius: 5%;
+  border-style: solid;
+  border-color: black;
+}
+
+.quiz-info-title {
+  font-weight: bold;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.quiz-rules {
+  padding: 0 15px 10px;
+  margin: 10px;
+}
+
+.start-btn {
+  text-align: center;
+}
+
+button {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  width: 25%;
+}
+
