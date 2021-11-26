@@ -8,106 +8,39 @@
   </head>
   <body>
     <!--Quiz Info-->
-    <div class="quiz-info">
-      <h1 class="quiz-info-title">This is the Coding Quiz</h1>
-      <div class="quiz-rules">
-        <p>You  will have 60 seconds to complete the four questions. If you answer a question incorrectly 5 seconds will be subtracted from the timer.</p>
+    <div id="quiz-info">
+      <div id="quiz-rules">
+        <h1>Quiz Rules</h1>
+        <h2>You  will have 60 seconds to complete the four questions.</h2>
+        <h2>If you answer a question incorrectly 5 seconds will be subtracted from the timer.</h2>
+        <h2>Your score will be displayed at the end.</h2>
       </div>
+      <button id="start-btn">Click to Start</button>
     </div>
-    <!-- start quiz button-->
-    <div class="start-btn"><button>Click to Start the Quiz</button></div>
-    <div class="quiz">
-      <header>
-        <h2 class="quiz-title">Coding Quiz</h2>
-        <div class="timer">60</div>
-      </header>
-      <section>
-        <div class="question">
-          <h3>The "function" and "var" are known as:</h3>
+    
+      <div id="quiz">
+        <div id="quiz-title">
+          <h1>Javascript Quiz</h1>
+          <div id="timer">
+            <h3>Seconds Left</h3>
+            <h3 id="seconds">00</h3>
+          </div>
         </div>
-        <div class="answer">
-          <h4>Keywords</h4>
-        </div>
-        <div class="answer">
-          <h4>Data Types</h4>
-        </div>
-        <div class="answer">
-          <h4>Declaration Statements-</h4> 
-        </div>
-        <div class="answer">
-          <h4>Prototypes</h4>
-        </div>
-      </section>
-    </div>
-    <div class="quiz">
-      <header>
-        <h2 class="quiz-title">Coding Quiz</h2>
-        <div class="timer">60</div>
-      </header>
-      <section>
-        <div class="question">
-          <h3>What is the element called that is used to describe the set of variables, objects, and functions you explicitly have access to?</h3>
-        </div>
-        <div class="answer">
-          <h4>Restriction</h4>
-        </div>
-        <div class="answer">
-          <h4>Scope-</h4>
-        </div>
-        <div class="answer">
-          <h4>Output Level</h4> 
-        </div>
-        <div class="answer">
-          <h4>Range</h4>
-        </div>
-      </section>
-    </div>
-    <div class="quiz">
-      <header>
-        <h2 class="quiz-title">Coding Quiz</h2>
-        <div class="timer">60</div>
-      </header>
-      <section>
-        <div class="question">
-          <h3>What is a JavaScript element that represents either TRUE or FALSE values?</h3>
-        </div>
-        <div class="answer">
-          <h4>Boolean-</h4>
-        </div>
-        <div class="answer">
-          <h4>RegExp</h4>
-        </div>
-        <div class="answer">
-          <h4>Event</h4> 
-        </div>
-        <div class="answer">
-          <h4>Condition</h4>
-        </div>
-      </section>
-    </div>
-    <div class="quiz">
-      <header>
-        <h2 class="quiz-title">Coding Quiz</h2>
-        <div class="timer">60</div>
-      </header>
-      <section>
-        <div class="question">
-          <h3>In JavaScript, what element is used to store multiple values in a single variable?</h3>
-        </div>
-        <div class="answer">
-          <h4>Arrays-</h4>
-        </div>
-        <div class="answer">
-          <h4>Variables</h4>
-        </div>
-        <div class="answer">
-          <h4>Functions</h4> 
-        </div>
-        <div class="answer">
-          <h4>Strings</h4>
-        </div>
-      </section>
-    </div>
+        <div id="question">The 'function' and 'var' are known as:</div>
+
+          <div id="choices">
+            <h3 class="choice" id="A">Keywords</h3>
+            <h3 class="choice" id="B">Declaration Statements</h3>
+            <h3 class="choice" id="C">Prototypes</h3>
+            <h3 class="choice" id="D">Data Types</h3>
+          </div>
+      </div>
+
+      <div id="highscore">
+        <h2>Your score is: <span id="score"></span></h2>
+        <input type="text" name="score" placeholder="Enter Initials">
+        <button id="submit-btn">Submit</button>
+      </div>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>

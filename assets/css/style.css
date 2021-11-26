@@ -8,8 +8,8 @@ body {
   background:#ecd344;
 }
 
-.quiz-info, .quiz {
-  width: 450px;
+#quiz-info, #quiz, #highscore {
+  width: 500px;
   background: white;
   position: center;
   margin: 100px auto;
@@ -19,26 +19,54 @@ body {
   border-color: black;
 }
 
-.quiz-info-title {
+#quiz-rules h1 {
+  font-size: 30px;
   font-weight: bold;
-  font-size: 25px;
-  padding: 10px;
 }
 
-.quiz-rules {
+#quiz-rules h2 {
   padding: 0 15px 10px;
   margin: 10px;
+  font-size: 18px;
 }
 
-.start-btn {
-  text-align: center;
-}
-
-button {
+#start-btn {
   background-color: black;
   color: white;
   font-size: 20px;
   padding: 10px;
-  width: 25%;
+  margin: 0 20px 30px 20px;
 }
 
+button:hover {
+  background-color: gray;
+}
+
+#question {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+#choices {
+  font-weight: lighter;
+}
+
+.choice {
+  border: solid;
+  margin: 15px 25px;
+  background-color: black;
+  color: white;
+}
+
+.choice:hover {
+  background-color: gray;
+}
+
+#submit-btn {
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+  margin: 0 20px 30px 20px;
+}
