@@ -5,11 +5,18 @@
 }
 
 body {
+  display: grid;
   background:#ecd344;
 }
 
-#quiz-info, #quiz, #highscore {
+#container {
+  height: auto;
+  width: auto;
+}
+
+.quiz-box, #quiz, #highscore {
   width: 500px;
+  height: auto;
   background: white;
   position: center;
   margin: 100px auto;
@@ -19,12 +26,12 @@ body {
   border-color: black;
 }
 
-#quiz-rules h1 {
+#quiz-info h1 {
   font-size: 30px;
   font-weight: bold;
 }
 
-#quiz-rules h2 {
+#quiz-info h2 {
   padding: 0 15px 10px;
   margin: 10px;
   font-size: 18px;
@@ -40,6 +47,10 @@ body {
 
 button:hover {
   background-color: gray;
+}
+
+#quiz {
+  position: relative;
 }
 
 #question {
